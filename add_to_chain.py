@@ -17,6 +17,7 @@ def add_to_chain(func, old_name, new_name=None, n_dim=4):
     old_chain = np.loadtxt(old_name, unpack=True)
     params = old_chain[2:2 + n_dim]
     add = Parallel(n_jobs=-1)(delayed(lambda x: func(*x))(x) for x in tqdm(zip(*params)))
+    add = np.array(add)
     new_chain = np.append(old_chain, add.T, axis=0)
 
     default_name = "{}_modified.txt".format(old_name.replace(".txt", ""))

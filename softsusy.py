@@ -25,28 +25,29 @@ Block SMINPUTS		     # Standard Model inputs
     6   1.743000000e+02	     # mtop(pole)
     7	1.777000000e+00	     # mtau(pole)
 BLOCK MINPAR
-    3   {3}  # tanbeta(mZ)^DRbar
-BLOCK EXTPAR     Q=  3.002744880346726e+03
-    1  {0}  # bino mass parameter M1
-    2  {1}  # wino mass parameter M2
-    3   4.999835372666907e+03   # gluino mass parameter M3
-    23  {2} # mu parameter
-    26  3.000003548804418e+03   # mA pole mass
-    31  3.000003548804418e+03   # sqrt(ml2(1,1))
-    32  3.000003575648636e+03   # sqrt(ml2(2,2))
-    33  3.000011270101646e+03   # sqrt(ml2(3,3))
-    34  2.999993744299581e+03   # sqrt(me2(1,1))
-    35  2.999993798271672e+03   # sqrt(me2(2,2))
-    36  3.000009286843936e+03   # sqrt(me2(3,3))
-    41  2.999738724081019e+03   # sqrt(mq2(1,1))
-    42  2.999738731883629e+03   # sqrt(mq2(2,2))
-    43  2.999779948524007e+03   # sqrt(mq2(3,3))
-    44  2.999741981728408e+03   # sqrt(mu2(1,1))
-    45  2.999741982627098e+03   # sqrt(mu2(2,2))
-    46  2.999796825865484e+03   # sqrt(mu2(3,3))
-    47  2.999735317691816e+03   # sqrt(md2(1,1))
-    48  2.999735332514917e+03   # sqrt(md2(2,2))
-    49  2.999763723561374e+03   # sqrt(md2(3,3))
+    3  {3}  # tanbeta(mZ)^DRbar
+BLOCK EXTPAR
+    0  3.e3    # Q
+    1  {0}     # bino mass parameter M1
+    2  {1}     # wino mass parameter M2
+    3  5.e3    # gluino mass parameter M3
+    23  {2}    # mu parameter
+    26  5.e3   # mA pole mass
+    31  3.e3   # sqrt(ml2(1,1))
+    32  3.e3   # sqrt(ml2(2,2))
+    33  3.e3   # sqrt(ml2(3,3))
+    34  3.e3   # sqrt(me2(1,1))
+    35  3.e3   # sqrt(me2(2,2))
+    36  3.e3   # sqrt(me2(3,3))
+    41  3.e3   # sqrt(mq2(1,1))
+    42  3.e3   # sqrt(mq2(2,2))
+    43  3.e3   # sqrt(mq2(3,3))
+    44  3.e3   # sqrt(mu2(1,1))
+    45  3.e3   # sqrt(mu2(2,2))
+    46  3.e3   # sqrt(mu2(3,3))
+    47  3.e3   # sqrt(md2(1,1))
+    48  3.e3   # sqrt(md2(2,2))
+    49  3.e3   # sqrt(md2(3,3))
 """
 
 def softsusy(M1, M2, mu, tan_beta):
